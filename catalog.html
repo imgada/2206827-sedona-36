@@ -3,40 +3,46 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 <body>
-  <header class="catalog-header">
+    <!--Шапка-->
+    <!--Меню-->
+    <header class="page-header">
       <a class="catalog-navigation-logo" href="index.html">
        <img class="catalog-navigation-logo" src="images/logo.svg" width="140" height="70.05" alt="логотип город седона">
       </a>
-   <nav class="catalog-navigation">
+    <nav class="navigation">
       <ul class="navigation-list">
        <li class="navigation-item">
-         <a class="navigation-link" href="index.html">Главная</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-kink" href="#">О Седоне</a>
-        </li>
-        <li class="navigation-item ">
-         <a class="navigation-kink navigation-link-current" href="#">Гостиницы</a> <!-- navigation-link-current атрибут, который показывает, на какой странице находимся-->
-        </li>
+        <!--нижнее подчеркивание ссылки при нахождении на странице?-->
+         <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
+       </li>
+       <li class="navigation-item">
+         <a class="navigation-link" href="#">О Седоне</a>
+       </li>
+       <li class="navigation-item">
+         <a class="navigation-link" href="catalog.html">Гостиницы</a>
+       </li>
       </ul>
+      <!--Поиск-меню-->
       <ul class="user-list">
-       <li class="user-item">
-          <a class="user-link" href="#">
-         <span class="visually-hidden" >поиск</span>
-         </a>
+        <li class="user-item">
+         <a class="navigation-link" href="#">
+           <span class="visually-hidden" >поиск</span> </a>
         </li>
         <li class="user-item">
-          <a href="#"><span class="visually-hidden" >избранное</span> </a>
-       </li>
-       <li class="user-item">
-         <a class="button button-all" href="#">хочу сюда</a>
-       </li>
+          <a class="navigation-link" href="#"> <span class="visually-hidden" >избранное</span> </a>
+        </li>
+        <li class="user-item">
+          <a class="navigation-link button" href="#">хочу сюда</a>
+        </li>
       </ul>
-   </nav>
-  </header>
+    </nav>
+    </header>
+ <!--Главная страница каталога-->
  <main class="main-inner">
+  <div class="conteiner-main-inner">
    <header class="header-inner">
      <h1 class="header-inner-title"> Гостиницы Седоны</h1>
       <ol class="breadcrumbs">
@@ -48,6 +54,7 @@
         </li>
       </ol>
    </header>
+      <!--Фильтр каталога-->
    <section class="catalog-filter">
         <h2 class="catalog-filter visually-hidden" >Фильтр</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -93,30 +100,26 @@
           </fieldset>
           <fieldset class="filter-price">
            <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-           <input class="text" type="min" placeholder="от"> <!--что с цифрами делать?-->
+           <!--нужно доделать плейсхолдер-->
+           <input class="text" type="min" placeholder="от">
            <input class="text" type="max" placeholder="до">
           </fieldset>
-         <button class="button" type="submit">Показать</button>
-         <button class="button" type="reset">Сбросить</button>
-         <p class="search results">Найдено гостиниц: 38</p>
-       </form>
+         <button class="button button-blue-inner" type="submit">Применить</button>
+         <button class="button button-none" type="reset">Сбросить</button>
+        </form>
+        </div>
+        <!-- Результаты поиска-->
+         <p class="search-results">Найдено гостиниц: 38</p>
        <select class="select-control" aria-label="Сортировка">
         <option value="popular">Сначала популярное</option>
         <option value="cheap">Сначала дешёвое</option>
         <option value="expensive">Сначала дорогое</option>
        </select>
-       <button class="view" type="button">Показать плитки</button>
-       <button class="view" type="button">Показать большие плитки</button>
-       <button class="view" type="button">Показать список</button>
-        <!--<a href="#" class="button button-light">
-        <span class="visually-hidden">Показать плитки</span>
-       </a>
-       <a class="button button-light" href="#">
-        <span class="visually-hidden">Показать большие плитки</span>
-       </a>
-       <a class="button button-light" href="#">
-        <span class="visually-hidden">Показать список</span>
-       </a>  так оформляли в обучалке по Барбершопу: барбершоп. разметка католога, шаг 18/24 -->
+       <button class="button-view" type="button">Показать плитки</button>
+       <button class="button-view" type="button">Показать большие плитки</button>
+       <button class="button-view" type="button">Показать список</button>
+       <!--Карточки-->
+       <div class="conteiner-cards">
        <ol class="hotel-list">
        <li class="hotel-card">
         <a class="hotel-card-link" href="#">
@@ -125,9 +128,9 @@
         </a>
         <span class="hotel-name">Гостиница</span>
             <span class="hotel-price"> от 4000 ₽</span>
-        <a class="about-hotel button-brown" href="#">Подробнее</a>
-        <button class="about-hotel button-blue" type="button">Избранное</button>
-        <span class="hotel-stars hotel-stars-rating-4"> <span class="visually-hidden">четыри звезды</span></span>
+        <a class="button button-brown" href="#">Подробнее</a>
+        <button class="button button-blue-inner" type="button">Избранное</button>
+        <span class="hotel-stars stars-4"> <span class="visually-hidden">четыри звезды</span></span>
         <span class="hotel-rating">Рейтинг: 8,5</span>
        </li>
        <li class="hotel-card">
@@ -137,9 +140,9 @@
         </a>
         <span class="hotel-name">Гостиница</span>
             <span class="hotel-price"> от 5000 ₽</span>
-        <a class="about-hotel button-green" href="#">Подробнее</a>
-        <button class="about-hotel button-blue" type="button">Избранное</button>
-        <span class="hotel-stars hotel-stars-rating-4"> <span class="visually-hidden">четыре звезды</span></span>
+        <a class="button button-green" href="#">Подробнее</a>
+        <button class="button button-blue-inner" type="button">Избранное</button>
+        <span class="hotel-stars stars-4"> <span class="visually-hidden">четыре звезды</span></span>
         <span class="hotel-rating">Рейтинг: 9,2</span>
        </li>
        <li class="hotel-card">
@@ -149,9 +152,9 @@
         </a>
         <span class="hotel-name">Гостиница</span>
             <span class="hotel-price"> от 2500 ₽</span>
-        <a class="about-hotel button-brown" href="#">Подробнее</a>
-        <button class="about-hotel button-blue" type="button">Избранное</button>
-        <span class="hotel-stars hotel-stars-rating-3"> <span class="visually-hidden">три звезды</span></span>
+        <a class="button button-brown" href="#">Подробнее</a>
+        <button class="button button-blue-inner" type="button">Избранное</button>
+        <span class="hotel-stars stars-3"> <span class="visually-hidden">три звезды</span></span>
         <span class="hotel-rating">Рейтинг: 6,9</span>
        </li>
        <li class="hotel-card">
@@ -161,15 +164,17 @@
         </a>
         <span class="hotel-name">Гостиница</span>
             <span class="hotel-price"> от 1500 ₽</span>
-        <a class="about-hotel button-brown" href="#">Подробнее</a>
-        <button class="about-hotel button-blue" type="button">Избранное</button>
-        <span class="hotel-stars hotel-stars-rating-2"> <span class="visually-hidden">две звезды</span></span>
+        <a class="button button-brown" href="#">Подробнее</a>
+        <button class="button button-blue-inner" type="button">Избранное</button>
+        <span class="hotel-stars stars-2"> <span class="visually-hidden">две звезды</span></span>
         <span class="hotel-rating">Рейтинг: 5,0</span>
        </li>
        </ol>
+       </div>
+       <!--Пагинация-->
         <ol class="pagination">
         <li class="pagination-item">
-        <a class="pagination-link pagination-current">1</a>
+        <a class="pagination-link pagination-link-1 pagination-current">1</a>
         </li>
        <li class="pagination-item">
         <a class="pagination-link" href="#">2</a>
@@ -181,34 +186,42 @@
         <a class="pagination-link" href="#">4</a>
         </li>
         <li class="pagination-item">
-        <a class="pagination-link" href="#">...</a> <!--span или как?-->
+        <a class="pagination-link" href="#">...</a>
         </li>
         <li class="pagination-item">
         <a class="pagination-link" href="#">10</a>
         </li>
       </ol>
    </section>
-   <section class="subscription">
-     <h2 class="newsletter">Подпишитесь на рассылку</h2>
-     <p>Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
-     <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="get">
-       <input type="email" placeholder="Ваш e-mail">
-       <button class="button" type="submit">Подписаться</button>
+   <!--Подписка-->
+   <section class="subscribe">
+    <h2 class="newsletter title-index">Подпишитесь на рассылку</h2>
+    <p>Только полезная информация и никакого спама, честное бойскаутское!
+    </p>
+    <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="get">
+      <label class="subscribe-label">
+      <input class="subscribe-input" type="email" placeholder="Ваш e-mail">
+      </label>
+      <button class="button button-blue" type="submit">Подписаться</button>
      </form>
    </section>
  </main>
-  <footer class="page-footer">
-   <h2 class="visually-hidden">Контакты</h2>
-   <ul class="social">
-    <li> <a class="social-link  social-link-vk" href="https://vk.com/htmlacademy"></a></li>
-    <li> <a class="social-link social-link-telegram" href="https://t.me/htmlacademy"></a></li>
-    <li> <a class="social-link social-link-youtube" href="https://www.youtube.com/user/htmlacademy"></a></li>
-   </ul>
-   <p>
-   <a class="contacts-phone" href="tel:88128121212">+7(812)812-12-12</a> <!--обязательно с телефоном нужно ставить тег address?-->
-   </p>
-   <a class="logo-htmlacademy" href="http://htmlacademy.ru">
-    <img  src="images/Logo-academy.svg" width="114.9" height="32.9" alt="станица разработчика">
-   </a>
-  </footer>
+ <!--Подвал-->
+ <footer class="page-footer">
+  <h2 class="visually-hidden">Контакты</h2>
+  <ul class="social">
+  <li> <a class="social-link  social-link-vk" href="https://vk.com/htmlacademy"></a>
+  </li>
+  <li> <a class="social-link social-link-telegram" href="https://t.me/htmlacademy"></a>
+  </li>
+  <li> <a class="social-link social-link-youtube" href="https://www.youtube.com/user/htmlacademy"></a>
+  </li>
+  </ul>
+  <p>
+  <a class="contacts-phone" href="tel:88128121212">+7(812)812-12-12</a>
+  </p>
+  <a class="logo-htmlacademy" href="http://htmlacademy.ru">
+   <img src="images/Logo-academy.svg" width="114.9" height="32.9" alt="станица разработчика">
+  </a>
+</footer>
 </body>
