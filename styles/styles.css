@@ -1,0 +1,264 @@
+@font-face {
+  font-family:"PT Sans" ;
+  src: url(../fonts/ptsans-400.woff2) format(.woff2);
+  font weight: 400;
+  font style: normal;
+  font-display:swap;
+}
+@font-face {
+  font-family:"PT Sans"  ;
+  src: url(../fonts/ptsans-700.woff2)format(.woff2);
+  font weight: 700;
+  font style: normal;
+  font-display:swap;
+}
+/*pages*/
+/*такая штука с фоном интересная*/
+body{
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #F2F2F2;
+}
+/*header*/
+.page-header{
+  background-color: #ffffff;
+}
+.navigation-link {
+  font weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: inherit;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+/*main*/
+.main-index{
+  font weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  background-color: #ffffff;
+}
+/*как наложить второй бэк в виде свг?*/
+.hero {
+  background-image: url("../images/Vector.svg"), url("../images/index-background.jpg");
+  /*есть вопросы к размеру фона-изображения*/
+  background-size: 100% auto , 100% auto;
+  background-repeat: no-repeat , no-repeat;
+  background-position:bottom center, top center;
+}
+/*advantages*/
+.advantages b{
+  font weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.advantages p{
+  font weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+.Interesting{
+  font weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.choose-a-date{
+  font weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+  text-transform:none;
+}
+.conteiner-title {
+  font weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.conteiner-sectional p{
+  font weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  text-transform:none;
+}
+.basic-3 {
+ color:#FFFFFF;
+ background-color:#82B3D3;
+}
+.basic-3 p{
+  color:#FFFFFF;
+}
+.second-1{
+  background-color:rgba(131, 179, 211, 0.12);
+}
+.second-2{
+  background-color:rgba(131, 179, 211, 0.2);
+}
+/*здесь по сути еще формление ссылки Поиска гостиниц*/
+.subscribe{
+  color: #ffffff;
+  background-image: url("../images/background-filter.jpg");
+  background-size: 100% 414.86px;
+  background-repeat: no-repeat;
+}
+/* Правильно здесь?*/
+.Ваш e-mail {
+ background-color:#ffffff;
+}
+.page-footer{
+  text-align: center;
+  text-transform: uppercase;
+  color:#000000;
+  background-color:#ffffff;
+}
+.social-link{
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.contacts-phone{
+  font weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: inherit;
+  background-color:#ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.logo-htmlacademy{
+
+}
+.button{
+  color:#ffffff;
+  background-color:#756157;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.button-blue{
+  background-color:#82B3D3;
+}
+/*Каталог*/
+.main-inner{
+  color:#000000;
+  background-color: #ffffff;
+}
+.conteiner-main-inner {
+  background-image: url("../images/background-filter.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  font weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  font-style: normal;
+  text-align: top left;
+  color:#ffffff;
+  background-color: #000000;
+  text-transform: capitalize;
+}
+.header-inner-title{
+  font weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+
+}
+.filter-ifra-title{
+  font weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+/*хлебные крошки*/
+.breadcrumbs{
+  font-size: 16px;
+  line-height: 21px;
+}
+.breadcrumbs-link {
+  color: inherit;
+}
+/* результаты поиска*/
+.search-results{
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+}
+.select-control{
+  font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+}
+/* карточки гостиниц*/
+.conteiner-cards {
+  font weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  font-style: normal;
+  text-align: top left;
+  color:#333333;
+  background-color: #ffffff;
+  text-transform: capitalize;
+}
+.hotel-card-link{
+  color: #000000;
+  text-decoration: none;
+}
+.hotel-card-title{
+  font weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+.hotel-price{
+  font weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: :right;
+}
+.hotel-rating{
+  font weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  background-color:#F2F2F2;
+  text-align: center;
+  text-transform: uppercase;
+}
+/*пагинация*/
+.pagination-link{
+  font weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color:#82B3D3;
+  text-decoration: none;
+}
+.pagination-link-1 {
+  color: #000000;
+  background-color:#F2F2F2;
+}
+/*подписка*/
+.subscribe{
+  text-align: center;
+}
+/*кнопки каталог*/
+.button-blue-inner {
+  font weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color:#82B3D3;
+  text-transform: uppercase;
+}
+.button-none{
+  background-color: transparent;
+}
