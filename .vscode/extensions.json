@@ -1,5 +1,7 @@
 {
   "recommendations": [
-    "EditorConfig.EditorConfig"
+    "editorconfig.editorconfig",
+    "github.vscode-pull-request-github",
+    "ritwickdey.liveserver"
   ]
 }
