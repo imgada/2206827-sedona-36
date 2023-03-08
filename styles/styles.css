@@ -2,14 +2,14 @@
   font-family:"PT Sans" ;
   font-weight: 400;
   font-style: normal;
-  src: url(../fonts/ptsans-400.woff2) format(.woff2);
+  src: url(../fonts/ptsans-400.woff2) format(woff2);
   font-display:swap;
 }
 @font-face {
   font-family:"PT Sans"  ;
   font-weight: 700;
   font-style: normal;
-  src: url(../fonts/ptsans-700.woff2)format(.woff2);
+  src: url(../fonts/ptsans-700.woff2)format(woff2);
   font-display:swap;
 }
 /*pages*/
@@ -179,7 +179,7 @@ body{
   font-size: 18px;
   line-height: 23px;
   font-style: normal;
-  text-align: top left;
+  text-align: left;
   color:#ffffff;
   background-color: #000000;
   text-transform: capitalize;
@@ -240,7 +240,7 @@ body{
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  text-align: :right;
+  text-align: right;
 }
 .hotel-rating{
   font-weight: 400;
