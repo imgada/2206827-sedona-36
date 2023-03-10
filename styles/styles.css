@@ -12,17 +12,26 @@
   src: url(../fonts/ptsans-700.woff2)format(woff2);
   font-display:swap;
 }
+html {
+height: 100%;
+}
 /*pages*/
-/*такая штука с фоном интересная*/
-body{
+body {
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
   color: #000000;
   background-color: #F2F2F2;
+  margin: 0;
+  height: 100%;
 }
 /*разобраться, как применить тень к боксу*/
-.box{
+.box {
+  width: 1200px;
+  margin:0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 .visually-hidden {
@@ -54,6 +63,9 @@ body{
   text-transform: capitalize;
 }
 /*main*/
+.main-container {
+  flex-grow: 1;
+}
 .main-index{
   font-weight: 400;
   font-size: 22px;
@@ -61,6 +73,7 @@ body{
   text-align: center;
   background-color: #ffffff;
 }
+
 /*хиро*/
 .hero {
   background-image: url("../images/vector.svg"), url("../images/index-background.jpg");
