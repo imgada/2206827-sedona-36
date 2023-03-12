@@ -73,14 +73,12 @@ body {
 /* не могу понять, почему отступы не сбрасываются*/
 .user-list {
   max-width: 312px;
-  padding: 0;
-  margin:  0;
+  list-style: none;
 
 }
 /* может сделать для каждого списка*/
 /*.nobullet {
   list-style-type: none;*/
-}
 .navigation-link {
   font-weight: 700;
   font-size: 20px;
