@@ -104,6 +104,10 @@ body {
   text-align: center;
   background-color: #ffffff;
 }
+.main-container {
+  flex-grow: 1;
+}
+
 .action {
   font-weight: 700;
   font-size: 30px;
@@ -117,9 +121,7 @@ body {
   line-height: 26px;
   color: #333333;
 }
-.main-container {
-  flex-grow: 1;
-}
+
 .welcome-logo {
   display: block;
   margin: 0 auto;
@@ -247,10 +249,12 @@ body {
   color:rgba(255, 255, 255, 1);
 }
 /*Каталог*/
+
 .main-inner{
   color:#000000;
   background-color: #ffffff;
 }
+
 .container-main-inner {
   background-image: url("../images/background-filter.jpg");
   background-size: 100% 100%;
