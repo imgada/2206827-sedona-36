@@ -1,14 +1,14 @@
 @font-face {
   font-family:"PT Sans" ;
-  font-weight: 400;
   font-style: normal;
+  font-weight: 400;
   src: url(../fonts/ptsans-400.woff2) format(woff2);
   font-display:swap;
 }
 @font-face {
   font-family:"PT Sans"  ;
-  font-weight: 700;
   font-style: normal;
+  font-weight: 700;
   src: url(../fonts/ptsans-700.woff2)format(woff2);
   font-display:swap;
 }
@@ -25,15 +25,6 @@ body {
   margin: 0;
   height: 100%;
 }
-/*разобраться, как применить тень к боксу*/
-.box {
-  width: 1200px;
-  margin:0 auto;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -46,12 +37,49 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/*header*/
-.page-header{
-  background-color: #ffffff;
+.box {
+  width: 1200px;
+  margin:0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
-.nobullet {
-  list-style-type: none;
+/*header*/
+.page-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: auto;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0px 70px;
+}
+.catalog-navigation-link {
+  display: block;
+  padding:0;
+  margin:0;
+}
+.navigation {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.navigation-list {
+  width: 445px;
+  padding: 0;
+  margin:  0;
+}
+/* не могу понять, почему отступы не сбрасываются*/
+.user-list {
+  max-width: 312px;
+  padding: 0;
+  margin:  0;
+
+}
+/* может сделать для каждого списка*/
+/*.nobullet {
+  list-style-type: none;*/
 }
 .navigation-link {
   font-weight: 700;
@@ -73,7 +101,14 @@ body {
   text-align: center;
   background-color: #ffffff;
 }
-
+.page-container {
+  margin: 0 auto;
+  width: 1200px;
+}
+.welcome-logo {
+  display: block;
+  margin: 0 auto;
+}
 /*хиро*/
 .hero {
   background-image: url("../images/vector.svg"), url("../images/index-background.jpg");
@@ -83,14 +118,35 @@ body {
   background-position:bottom center, top center;
 }
 /*advantages*/
-.advantages b{
+.advantages {
+  display: flex;
+  width: 1200px;
+  margin: 0;
+  padding:0;
+}
+.advantages-list {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: stretch;
+  padding: 0;
+  margin: 0;
+}
+.basic-3 {
+  display: flex;
+  width: auto;
+
+}
+
+.advantages b {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
 }
-.advantages p{
+.advantages p {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
