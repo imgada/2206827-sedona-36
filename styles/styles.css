@@ -78,8 +78,8 @@ body {
 
 }
 /* может сделать для каждого списка*/
-.nobullet {
-  list-style-type: none;
+/*.nobullet {
+  list-style-type: none;*/
 }
 .navigation-link {
   font-weight: 700;
