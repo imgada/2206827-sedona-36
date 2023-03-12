@@ -6,38 +6,39 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 <body>
-  <header class="catalog-header">
-      <a class="catalog-navigation-logo" href="index.html">
-       <img class="catalog-navigation-logo" src="images/logo.svg" width="140" height="70.05" alt="логотип город седона">
-      </a>
-   <nav class="catalog-navigation">
-      <ul class="navigation-list">
-       <li class="navigation-item">
-         <a class="navigation-link" href="index.html">Главная</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-kink" href="#">О Седоне</a>
-        </li>
-        <li class="navigation-item ">
-         <a class="navigation-kink navigation-link-current" href="#">Гостиницы</a> <!-- navigation-link-current атрибут, который показывает, на какой странице находимся-->
-        </li>
-      </ul>
-      <ul class="user-list">
-       <li class="user-item">
-          <a class="user-link" href="#">
-         <span class="visually-hidden" >поиск</span>
-         </a>
-        </li>
-        <li class="user-item">
-          <a href="#"><span class="visually-hidden" >избранное</span> </a>
-       </li>
-       <li class="user-item">
-         <a class="button button-all" href="#">хочу сюда</a>
-       </li>
-      </ul>
-   </nav>
-  </header>
+  <div class="box">
+  <header class="page-header">
+    <a class="navigation-link-logo" href="index.html">
+     <img class="navigation-logo" src="images/logo.svg" width="140" height="70.05" alt="логотип город седона">
+    </a>
+  <nav class="navigation">
+    <ul class="navigation-list">
+     <li class="navigation-item">
+       <a class="navigation-link " href="index.html">Главная</a>
+     </li>
+     <li class="navigation-item">
+       <a class="navigation-link" href="#">О Седоне</a>
+     </li>
+     <li class="navigation-item">
+       <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+     </li>
+    </ul>
+    <ul class="navigation-list user-list">
+      <li class="user-item">
+       <a  href="#">
+         <span class="visually-hidden" >поиск</span> </a>
+      </li>
+      <li class="user-item">
+        <a href="#"> <span class="visually-hidden" >избранное</span> </a>
+      </li>
+      <li class="user-item">
+        <a class="button button-all" href="#">хочу сюда</a>
+      </li>
+    </ul>
+  </nav>
+</header>
  <main class="main-inner">
+  <div class="container-main-inner">
    <header class="header-inner">
      <h1 class="header-inner-title"> Гостиницы Седоны</h1>
       <ol class="breadcrumbs">
@@ -97,9 +98,12 @@
            <input class="text" type="min" placeholder="от"> <!--что с цифрами делать?-->
            <input class="text" type="max" placeholder="до">
           </fieldset>
+          <!--не подключился шрифт-->
          <button class="button" type="submit">Показать</button>
          <button class="button" type="reset">Сбросить</button>
-         <p class="search results">Найдено гостиниц: 38</p>
+        </div>
+        <!--Результаты поиска-->
+         <p class="search-results">Найдено гостиниц: 38</p>
        </form>
        <select class="select-control" aria-label="Сортировка">
         <option value="popular">Сначала популярное</option>
@@ -109,15 +113,6 @@
        <button class="view" type="button">Показать плитки</button>
        <button class="view" type="button">Показать большие плитки</button>
        <button class="view" type="button">Показать список</button>
-        <!--<a href="#" class="button button-light">
-        <span class="visually-hidden">Показать плитки</span>
-       </a>
-       <a class="button button-light" href="#">
-        <span class="visually-hidden">Показать большие плитки</span>
-       </a>
-       <a class="button button-light" href="#">
-        <span class="visually-hidden">Показать список</span>
-       </a>  так оформляли в обучалке по Барбершопу: барбершоп. разметка католога, шаг 18/24 -->
        <ol class="hotel-list">
        <li class="hotel-card">
         <a class="hotel-card-link" href="#">
@@ -126,8 +121,8 @@
         </a>
         <span class="hotel-name">Гостиница</span>
             <span class="hotel-price"> от 4000 ₽</span>
-        <a class="about-hotel button-brown" href="#">Подробнее</a>
-        <button class="about-hotel button-blue" type="button">Избранное</button>
+        <a class="button button-brown" href="#">Подробнее</a>
+        <button class="button button-blue" type="button">Избранное</button>
         <span class="hotel-stars hotel-stars-rating-4"> <span class="visually-hidden">четыри звезды</span></span>
         <span class="hotel-rating">Рейтинг: 8,5</span>
        </li>
@@ -138,8 +133,8 @@
         </a>
         <span class="hotel-name">Гостиница</span>
             <span class="hotel-price"> от 5000 ₽</span>
-        <a class="about-hotel button-green" href="#">Подробнее</a>
-        <button class="about-hotel button-blue" type="button">Избранное</button>
+        <a class="button button-green" href="#">Подробнее</a>
+        <button class="button button-blue" type="button">Избранное</button>
         <span class="hotel-stars hotel-stars-rating-4"> <span class="visually-hidden">четыре звезды</span></span>
         <span class="hotel-rating">Рейтинг: 9,2</span>
        </li>
@@ -150,8 +145,8 @@
         </a>
         <span class="hotel-name">Гостиница</span>
             <span class="hotel-price"> от 2500 ₽</span>
-        <a class="about-hotel button-brown" href="#">Подробнее</a>
-        <button class="about-hotel button-blue" type="button">Избранное</button>
+        <a class="button button-brown" href="#">Подробнее</a>
+        <button class="button button-blue" type="button">Избранное</button>
         <span class="hotel-stars hotel-stars-rating-3"> <span class="visually-hidden">три звезды</span></span>
         <span class="hotel-rating">Рейтинг: 6,9</span>
        </li>
@@ -162,8 +157,8 @@
         </a>
         <span class="hotel-name">Гостиница</span>
             <span class="hotel-price"> от 1500 ₽</span>
-        <a class="about-hotel button-brown" href="#">Подробнее</a>
-        <button class="about-hotel button-blue" type="button">Избранное</button>
+        <a class="button button-brown" href="#">Подробнее</a>
+        <button class="button button-blue" type="button">Избранное</button>
         <span class="hotel-stars hotel-stars-rating-2"> <span class="visually-hidden">две звезды</span></span>
         <span class="hotel-rating">Рейтинг: 5,0</span>
        </li>
@@ -189,11 +184,11 @@
         </li>
       </ol>
    </section>
-   <section class="subscription">
-     <h2 class="newsletter">Подпишитесь на рассылку</h2>
-     <p>Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+   <section class="subscribe-catalog">
+     <b class="action">Подпишитесь на рассылку</b>
+     <p class="info">Только полезная информация и никакого спама, честное бойскаутское!</p>
      <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="get">
-       <input type="email" placeholder="Ваш e-mail">
+       <input class="subscribe-input"  type="email" placeholder="Ваш e-mail">
        <button class="button" type="submit">Подписаться</button>
      </form>
    </section>
@@ -212,4 +207,5 @@
     <img  src="images/Logo-academy.svg" width="114.9" height="32.9" alt="станица разработчика">
    </a>
   </footer>
+</div>
 </body>
