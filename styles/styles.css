@@ -38,38 +38,31 @@ body {
 /*header*/
 .page-header {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 1200px;
   background-color: #ffffff;
   margin: 0;
   padding: 0px 70px;
-  /*
+  /*тут должна быть тень
   box-shadow:0 4px 4px 0px rgba(0, 0, 0, 0.25);*/
   outline: 1px solid red;
 }
-.navigation-link-logo {
-  display: block;
+.index-logo {
   padding:0;
-  margin:0;
+  margin:0 28px -6px 0;
 }
 .navigation {
-  outline: 1px solid red;
   display: flex;
-  justify-content:s
-  margin: 0;
-  padding: 0;
-
+  justify-content: space-between;
+  list-style: none;
 }
 .navigation-list {
   /*list-style: none;*/
-  width: 445px;
-  padding: 0;
+  width: 446px;
   margin:  0;
+  padding: 0;
 }
-/* не могу понять, почему отступы не сбрасываются*/
+/* не хочет отдаляться и всё]*/
 .user-list {
-  max-width: 312px;
+  margin-left: auto;
 }
 /* может сделать для каждого списка*/
 /*.nobullet {
@@ -106,6 +99,38 @@ body {
 }
 .main-container {
   flex-grow: 1;
+}
+.advantages{
+  width:  1200px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+.advantages-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  width: 1200px;
+  outline: 1px solid red;
+}
+.conteiner-sectional {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+.photo-1, photo-2 {
+  display: block;
+}
+.advantages-comfort {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  margin: 0%;
+  padding: 0%;
+  width: 1200px;
 }
 
 .action {
@@ -175,6 +200,7 @@ body {
 .second-2{
   background-color:rgba(131, 179, 211, 0.2);
 }
+
 /* поиск гостниц*/
 .Interesting{
   font-weight: 700;
@@ -234,9 +260,11 @@ body {
   line-height: 20px;
   color:rgba(255, 255, 255, 1);
   background-color:#756157;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   border-style: none;
+  border-radius: 4px;
 }
 .button-blue {
   background-color:#82B3D3;
@@ -245,11 +273,15 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  text-align: center;
-  color:rgba(255, 255, 255, 1);
 }
 /*Каталог*/
-
+.catalog-box {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
 .main-inner{
   color:#000000;
   background-color: #ffffff;
@@ -272,6 +304,7 @@ body {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+  padding: 35px 635.6px 8px 70px;
 
 }
 .filter-ifra-title{
@@ -280,6 +313,12 @@ body {
   line-height: 24px;
 }
 /*хлебные крошки*/
+.breadcrumbs {
+  display: flex;
+  margin: 0%;
+  padding: 8px 1016px 40px 70px;
+  list-style-type: none;
+}
 .breadcrumbs{
   font-size: 16px;
   line-height: 21px;
@@ -287,24 +326,140 @@ body {
 .breadcrumbs-link {
   color: inherit;
 }
+/* флекс фильтров каталога*/
+.catalog-filter-form {
+  display: flex;
+  margin: 0 auto;
+  padding: 0 70px;
+
+}
+.filter-ifra {
+  display: flex;
+  width: 150px;
+  margin: 0%;
+  padding: 0%;
+  border-style: none;
+
+}
+.filter-ifra-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 32px 38.43px 0 0;
+}
+.filter-ifra-list-hote {
+  margin: 32px 9.43px 0 0;
+}
+.filter-hotel {
+margin: 0 0 0 70px;
+}
+.filter-price {
+  display: flex;
+  max-width: 300px;
+  padding: 0%;
+  margin-left: auto;
+  border-style: none;
+}
+.input-size {
+  width: 143px;
+  padding: 12px, 20px, 12px, 20px
+}
+.button-filter {
+  display: flex;
+  flex-direction: column;
+margin: 0%;
+padding: 0 0 0 70px;
+}
 .text {
   color:#F2F2F2;
 }
 /* результаты поиска*/
+/* сетка результата поиска*/
+.sorting {
+  display: flex;
+  padding: 0 70px;
+  margin: 0 auto;
+}
 .search-results {
+  width: 538px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
 }
+/* текст не помещается */
 .select-control {
+  width: 292px;
+  box-sizing: border-box;
+  padding: 14px 131px 14px 20px;
+  margin: 0 70px 0 192px;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
   font-family: inherit;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px
+}
+.view {
+  width: 48px;
+  padding: 17px 16px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+
 }
 /* карточки гостиниц*/
+/*сетки карточки*/
+.hotel-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 70px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.hotel-card {
+  display: flex;
+  width: 340px;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+}
+.hotel-card-image {
+  padding: 20px 16px;
+}
+.hotel-card-title {
+  padding: 16px 20px;
+}
+.hotel-name {
+  max-width: 140px;
+  padding: 16px 20px;
+}
+.hotel-price {
+  max-width: 140px;
+  padding: 16px 20px;
+}
+.button-more {
+  margin: 16px 20px;
+  padding: 8px 26px;
+}
+.button-like {
+  width: 88;
+  margin: 16px 20px;
+  padding: 8px 26px;
+}
+.hotel-stars {
+  margin: 16px 20px;
+}
+.hotel-rating {
+  margin: 16px 20px;
+}
+.hotel-stars, hotel-rating {
+  flex-direction: row;
+}
+.button-more , button-like {
+  flex-direction: row;
+}
 .container-cards {
   font-size: 18px;
   line-height: 21px;
@@ -343,6 +498,17 @@ body {
   text-transform: uppercase;
 }
 /*пагинация*/
+.pagination {
+  display: flex;
+justify-content: flex-start;
+
+}
+.pagination-item {
+
+  margin: 0 8px;
+  border-radius: 4px;
+}
+
 .pagination-link{
   font-weight: 700;
   font-size: 20px;
@@ -378,6 +544,9 @@ body {
   color: #FFFFFF;
   background-color:#82B3D3;
   text-transform: uppercase;
+}
+.button-green {
+  background-color:#7DB54F;
 }
 .button-none{
   background-color: transparent;
