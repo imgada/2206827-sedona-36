@@ -463,9 +463,12 @@ padding: 0 0 0 70px;
   border-radius: 4px;
 }
 .hotel-card-image {
+  display: block;
+  height: auto;
   padding: 20px 16px;
 }
 .hotel-card-title {
+  margin:0;
   padding: 16px 20px;
 }
 .hotel-name {
