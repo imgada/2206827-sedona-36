@@ -100,38 +100,7 @@ body {
 .main-container {
   flex-grow: 1;
 }
-.advantages{
-  width:  1200px;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  outline: 1px solid red;
-}
-.advantages-list {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  width: 1200px;
-  outline: 1px solid red;
-}
-.conteiner-sectional {
-  width: 400px;
-  display: flex;
-  flex-direction: column;
-}
-.photo-1, photo-2 {
-  display: block;
-}
-.advantages-comfort {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
-  margin: 0%;
-  padding: 0%;
-  width: 1200px;
-}
+
 
 .action {
   font-weight: 700;
@@ -159,7 +128,75 @@ body {
   background-repeat: no-repeat , no-repeat;
   background-position:bottom center, top center;
 }
+
 /*advantages*/
+.advantages-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-sub-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages-item {
+  flex-basis: calc(100% / 3);
+  width: calc(100% / 3);
+}
+
+.advantages-item-full {
+  flex-basis: 100%;
+  width: 100%;
+}
+
+.advantages-picture-block {
+  display: flex;
+  flex-basis: 100%;
+  width: 100%;
+}
+
+.advantages-picture-block .advantages-content {
+  flex-basis: calc(100% / 3);
+  width: calc(100% / 3);
+}
+
+.advantages-picture-block .advantages-img {
+  flex-basis: calc(2 * (100% / 3));
+  width: calc(2 * (100% / 3));
+}
+
+.advantages-picture-block-reverse {
+  flex-direction: row-reverse;
+}
+
+.advantages-sub-list {
+  display: flex;
+  flex-basis: 100%;
+  width: 100%;
+}
+.advantages-sub-item {
+  flex-basis: calc(100% / 3);
+  width: calc(100% / 3);
+}
+.container-title {
+  padding: 102px 112.5px 30px 112.5px;
+}
+.advantages-content p {
+  padding: 30px 85px 102px 85px;
+}
 .advantages {
   font-weight: 700;
   font-size: 30px;
@@ -180,7 +217,7 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
-.container-sectional p{
+.advantages-content p{
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
