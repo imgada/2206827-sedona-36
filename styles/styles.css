@@ -256,15 +256,30 @@ margin-left:0 auto;
   color: #333333;
   text-transform:none;
 }
+.search-hotels {
+  display: flex;
+flex-direction: column;
+}
+.button-search {
+  width: 376px;
+
+
+}
 /*подписка*/
 .subscribe {
   color: rgba(255, 255, 255, 1);
   background-image: url("../images/background-filter.jpg");
   background-size: 100% 414.86px;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
 }
 .subscribe p {
   color: rgba(255, 255, 255, 1);
+}
+.subscribe-form {
+  display: flex;
+  justify-content: center;
 }
 /* Правильно здесь?*/
 .subscribe-input {
@@ -278,6 +293,14 @@ margin-left:0 auto;
   text-transform: uppercase;
   color:#000000;
   background-color:#ffffff;
+}
+.page-footer {
+  display: flex;
+justify-content: space-between;
+padding: 0 70px;
+}
+.contacts {
+  width: 720px;
 }
 .social-link{
   text-align: center;
@@ -432,8 +455,8 @@ padding: 0 0 0 70px;
 .select-control {
   width: 292px;
   box-sizing: border-box;
-  padding: 14px 131px 14px 20px;
-  margin: 0 70px 0 192px;
+  padding: 14px 99px 14px 20px;
+  margin: 0 70px 0 198px;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
