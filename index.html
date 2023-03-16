@@ -28,14 +28,14 @@
         </ul>
         <ul class="navigation-list user-list">
           <li class="user-item">
-           <a  href="#">
+           <a class="user-shearch" href="#">
              <span class="visually-hidden" >поиск</span> </a>
           </li>
           <li class="user-item">
-            <a href="#"> <span class="visually-hidden" >избранное</span> </a>
+            <a class="user-like" href="#"> <span class="visually-hidden" >избранное</span> </a>
           </li>
           <li class="user-item">
-            <a class="button button-all" href="#">хочу сюда</a>
+            <a class="button user-button-here" href="#">хочу сюда</a>
           </li>
         </ul>
       </nav>
@@ -49,12 +49,13 @@
        <!--Преимущества-->
        <section class="advantages">
          <h2 class="visually-hidden">Преимущества</h2>
-         <b class="action">Седона — небольшой городок в Аризоне,заслуживающий большего!</b>
+         <section class="advantages-promo">
+         <b class="action ">Седона — небольшой городок в Аризоне,заслуживающий большего!</b>
         <p class="info"> Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон! </p>
+         </section>
        <ul class="advantages-list">
          <li class="advantages-item advantages-item-full advantages-picture-block">
-           <div class="advantages-content basic-3>
-            <!--что тут такое опять?-->
+           <div class="advantages-content basic-3">
             <h3 class="container-title" > Настоящий городок </h3>
            <p> Седона — не аттракцион для туристов, там течёт своя жизнь
             </p>
@@ -87,8 +88,10 @@
            </div>
          </li>
        </ul>
+       <section class="advantages-promo-2">
          <b class="action">Приезжайте в Седону отдохнуть в комфорте и уюте!</b>
           <p class="info">Опытный персонал и качественное обслуживание! </p>
+        </section>
         <ul class="advantages-list advantages-sub-list">
          <li class="advantages-sub-item advantages-item-full">
            <div class="advantages-content second-2">
@@ -115,14 +118,14 @@
        <p class="info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне </p>
        <a class="button button-search" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
       </section>
-      <section class="subscribe">
+      <section class="subscribe-index">
        <b class="action">Подпишитесь на рассылку</b>
        <p class="info">Только полезная информация и никакого спама, честное бойскаутское!</p>
        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="get">
          <label class="subscribe">
-         <input class="subscribe-input" class="subscribe" type="email" placeholder="Ваш e-mail">
+         <input class="subscribe-input" type="email" placeholder="Ваш e-mail">
          </label>
-         <button class="button" type="submit">Подписаться</button>
+         <button class="button subscribe-button " type="submit">Подписаться</button>
         </form>
       </section>
     </main>
