@@ -29,7 +29,18 @@ body {
   margin: 0;
   height: 100%;
 }
-
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .box {
   width: 1200px;
   margin:0 auto;
@@ -71,7 +82,8 @@ body {
 }
 .navigation-item {
   display: block;
-  padding: 20px 16px;
+  padding: 0;
+  margin: 0;
 }
 
 .user-shearch {
@@ -101,6 +113,7 @@ background-position:center;
   list-style-type: none;
 }*/
 .navigation-link {
+  display: block;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -108,19 +121,11 @@ background-position:center;
   color: rgba(0, 0, 0, 1);
   text-decoration: none;
   text-transform: capitalize;
+  padding: 20px 16px;
+  margin: 0;
+
 }
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+
 /*main*/
 .index-main  {
   font-weight: 400;
@@ -746,7 +751,6 @@ flex-grow: 1;
 .hotel-stars-rating-5 {
   width: 90px;
 }
-
 
 .container-cards {
   font-size: 18px;
