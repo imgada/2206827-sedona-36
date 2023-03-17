@@ -16,7 +16,7 @@
       <nav class="navigation">
         <ul class="navigation-list">
          <li class="navigation-item">
-           <a class="navigation-link " href="index.html">Главная</a>
+           <a class="navigation-link" href="index.html">Главная</a>
          </li>
          <li class="navigation-item">
            <a class="navigation-link" href="#">О Седоне</a>
@@ -27,14 +27,14 @@
         </ul>
         <ul class="navigation-list user-list">
           <li class="user-item">
-           <a  href="#">
+           <a class="user-shearch" href="#">
              <span class="visually-hidden" >поиск</span> </a>
           </li>
           <li class="user-item">
-            <a href="#"> <span class="visually-hidden" >избранное</span> </a>
+            <a class="user-like" href="#"> <span class="visually-hidden" >избранное</span> </a>
           </li>
           <li class="user-item">
-            <a class="button button-all" href="#">хочу сюда</a>
+            <a class="button user-button-here" href="#">хочу сюда</a>
           </li>
         </ul>
       </nav>
@@ -45,7 +45,7 @@
      <h1 class="header-inner-title"> Гостиницы Седоны</h1>
       <ol class="breadcrumbs">
         <li class="breadcrumbs-item">
-         <a class="breadcrumbs-link visually-hidden" href="index.html">Главная</a>
+         <a class="breadcrumbs-link breadcrumbs-link-home visually-hidden" href="index.html">Главная</a>
         </li>
          <li class="breadcrumbs-item">
          <a class="breadcrumbs-link">Гостиницы</a>
@@ -115,9 +115,9 @@
         <option value="cheap">Сначала дешёвое</option>
         <option value="expensive">Сначала дорогое</option>
        </select>
-       <button class="view" type="button">Показать плитки</button>
-       <button class="view" type="button">Показать большие плитки</button>
-       <button class="view" type="button">Показать список</button>
+       <button class="view tiles" type="button ">Показать плитки</button>
+       <button class="view big-tiles" type="button">Показать большие плитки</button>
+       <button class="view list-results" type="button">Показать список</button>
        </div>
        <!-- карточки гостиниц-->
        <ol class="hotel-list">
@@ -200,27 +200,32 @@
       </ol>
    </section>
    <section class="subscribe-catalog">
-     <b class="action">Подпишитесь на рассылку</b>
-     <p class="info">Только полезная информация и никакого спама, честное бойскаутское!</p>
-     <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="get">
-       <input class="subscribe-input"  type="email" placeholder="Ваш e-mail">
-       <button class="button" type="submit">Подписаться</button>
+    <b class="action">Подпишитесь на рассылку</b>
+    <p class="info">Только полезная информация и никакого спама, честное бойскаутское!</p>
+    <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="get">
+      <label class="subscribe">
+      <input class="subscribe-input" type="email" placeholder="Ваш e-mail">
+      </label>
+      <button class="button subscribe-button " type="submit">Подписаться</button>
      </form>
    </section>
  </main>
-  <footer class="page-footer">
-   <h2 class="visually-hidden">Контакты</h2>
-   <ul class="social">
-    <li> <a class="social-link  social-link-vk" href="https://vk.com/htmlacademy"></a></li>
-    <li> <a class="social-link social-link-telegram" href="https://t.me/htmlacademy"></a></li>
-    <li> <a class="social-link social-link-youtube" href="https://www.youtube.com/user/htmlacademy"></a></li>
-   </ul>
-   <p>
-   <a class="contacts-phone" href="tel:88128121212">+7(812)812-12-12</a> <!--обязательно с телефоном нужно ставить тег address?-->
-   </p>
-   <a class="logo-htmlacademy" href="http://htmlacademy.ru">
-    <img  src="images/Logo-academy.svg" width="114.9" height="32.9" alt="станица разработчика">
-   </a>
-  </footer>
+ <footer class="page-footer">
+  <h2 class="visually-hidden">Контакты</h2>
+  <ul class="social">
+  <li> <a class="social-link  social-link-vk" href="https://vk.com/htmlacademy"></a>
+  </li>
+  <li> <a class="social-link social-link-telegram" href="https://t.me/htmlacademy"></a>
+  </li>
+  <li> <a class="social-link social-link-youtube" href="https://www.youtube.com/user/htmlacademy"></a>
+  </li>
+  </ul>
+  <p class="contacts">
+  <a class="contacts-phone" href="tel:88128121212">+7(812)812-12-12</a>
+  </p>
+  <a class="logo-htmlacademy" href="http://htmlacademy.ru">
+   <img src="images/Logo-academy.svg" width="114.9" height="32.9" alt="станица разработчика">
+  </a>
+</footer>
 </div>
 </body>
