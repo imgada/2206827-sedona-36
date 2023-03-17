@@ -576,6 +576,9 @@ flex-grow: 1;
   padding: 0;
   margin: 32px 38.43px 0 0;
 }
+.filter-ifra-item {
+  border-radius: 4px;
+}
 /*апартаменты не влазят, переходят на строку ниже*/
 .filter-ifra-list-hote {
   margin: 32px 9.43px 0 0;
@@ -635,8 +638,6 @@ flex-grow: 1;
 }
 /* текст не помещается */
 .select-control {
-  width: 292px;
-  height: 49px;
   box-sizing: border-box;
   padding: 14px 20px;
   margin: 0 70px 0 198px;
