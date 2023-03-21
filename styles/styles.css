@@ -19,6 +19,7 @@ html {
   box-sizing: border-box;
 height: 100%;
 }
+
 /*pages*/
 body {
   font-family: "PT Sans", sans-serif;
@@ -57,9 +58,10 @@ body {
   background-color: #ffffff;
   margin: 0;
   padding: 0 70px;
+  box-shadow:0 4px 4px rgba(0, 0, 0, 0.25);
 }
 .header-shadow-box {
-  box-shadow:0 4px 4px rgba(0, 0, 0, 0.25);
+
 }
 
 .index-logo {
